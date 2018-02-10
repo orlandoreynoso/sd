@@ -1,4 +1,4 @@
-<?php 
+<?php
 /* devuelve el directorio de stilo de css, y se le asigna a temppath */
 define('TEMPPATH',get_bloginfo('stylesheet_directory'));
 /*En esto concatenamos la carpeta images*/
@@ -9,12 +9,12 @@ add_theme_support('post-thumbnails');
 //add_image_size( $name, $width, $height, $crop );
 /*========== incluyendo los estilo que uso ===============*/
 
-include (TEMPLATEPATH. '/inc/estilos.php');
+include (TEMPLATEPATH. '/sdincludes/estilo.php');
 include (TEMPLATEPATH. '/inc/filtros.php');
 include (TEMPLATEPATH. '/inc/paginacioncpt.php');
 
 //add_image_size( $name, $width, $height, $crop );
-the_post_thumbnail('thumbnail',1024,1024,true);       // Tamaño de la miniatura 150x150 píxeles 
+the_post_thumbnail('thumbnail',1024,1024,true);       // Tamaño de la miniatura 150x150 píxeles
 the_post_thumbnail('medium',300,300, true);          // Tamaño de la mediano 300x300 píxeles
 the_post_thumbnail('large');
 the_post_thumbnail('pastorales', 751, 422, true);
@@ -23,13 +23,13 @@ the_post_thumbnail('full'); // La resolución original
 //set_post_thumbnail_size(1024,1024,true );
 
 
- require_once(TEMPLATEPATH.'/libs/wp_bootstrap_navwalker.php'); 
+ require_once(TEMPLATEPATH.'/libs/wp_bootstrap_navwalker.php');
 
 
 /* Theme setup */
 add_action( 'after_setup_theme', 'wpt_setup' );
     if ( ! function_exists( 'wpt_setup' ) ):
-        function wpt_setup() {  
+        function wpt_setup() {
             register_nav_menu( 'primary', __( 'Primary navigation', 'wptuts' ) );
         } endif;
 
@@ -122,9 +122,9 @@ function slogan(){
 }
 
 include (TEMPLATEPATH . '/inc/contenidos.php');
-include (TEMPLATEPATH . '/libs/entradas.php'); 
-include (TEMPLATEPATH . '/libs/totop.php'); 
-include (TEMPLATEPATH . '/libs/breadcrumb.php'); 
+include (TEMPLATEPATH . '/libs/entradas.php');
+include (TEMPLATEPATH . '/libs/totop.php');
+include (TEMPLATEPATH . '/libs/breadcrumb.php');
 include (TEMPLATEPATH . '/files/bread.php');
 include (TEMPLATEPATH . '/files/paginacioncustom.php');
 
@@ -145,6 +145,6 @@ if (function_exists('register_sidebar')) {
     ));
 }
 
-include (TEMPLATEPATH . '/libs/paginacion.php'); 
+include (TEMPLATEPATH . '/libs/paginacion.php');
 paginacion();
 ?>

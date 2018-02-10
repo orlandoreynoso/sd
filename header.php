@@ -10,12 +10,13 @@
 <body>
 
 <div class="e-menu">
+	
     <nav class="navbar navbar-expand-lg navbar-light">
       <?php get_template_part( 'template/header','buscador'); ?>
       <?php // get_template_part( 'template/header','menuresponsivo'); ?>
       <?php get_template_part( 'template/header','menumovil'); ?>
     </nav>
-    
+
     <div class="menu-desk" id="menu-desk">
     <div class="container menu-coverpage">
       <div class="row">
@@ -32,7 +33,5 @@
       </div><!-- Finaliza el ROW -->
     </div><!-- Finaliza el container del div menudesck -->
   </div><!--  Finaliza el div de menu-desk-->
-
-
 
 </div><!-- Finaliza el div >> e-menu -->
