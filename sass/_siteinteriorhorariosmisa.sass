@@ -1,0 +1,73 @@
+.interior-horarios-misa
+  display: flex
+  flex-flow: row wrap
+  box-sizing: border-box
+  .header-title
+    width: 100%
+    padding: 10px
+    margin-bottom: 30px
+    display: flex
+    flex-wrap: wrap
+    flex-flow: row
+    justify-content: space-between
+    align-items: flex-end
+    position: relative
+    @media screen and (max-width: 480px)
+      flex-flow: column
+      .titulo
+        margin-right: 14px
+    &::after
+      position: absolute
+      right: 20px
+      bottom: -10px
+      content: ""
+      background-color: rgba($m-verde,0.5)
+      height: 1px
+      display: block
+      width: 97%
+  .mapeo
+    .current
+      display: none
+  .titulos-page
+    border-right: 5px solid $celeste
+    padding: 0px 20px 0px 20px
+    font-size: 1.125em
+    text-align: right
+    @media screen and (max-width: 480px)
+      padding-right: 10px
+  .molino-contenido
+    width: var(--sizem)
+    min-height: 50vh
+    .horarios
+      box-sizing: border-box
+      text-align: center
+      width: calc(var(--sizem)/1)
+      @media screen and (max-width: 576px)  /* 576 a cero 0*/
+        width: calc(var(--sizem)/1)
+      .interiores
+        width: 100%
+.interior-horarios-misa    
+  .contenidos
+    width: var(--sizem)
+    padding: 0px
+    margin: 0px
+    box-sizing: border-box
+    @media screen and (max-width: 576px)
+      width: calc(var(--sizem)/1)
+    .agrupaciones-desglose
+      width: calc(var(--sizem)/1)
+      margin-top: 20px
+      h2
+        text-align: center
+        width: var(--sizem)
+        display: block
+        font-size: 1.5em !important
+      .c-agrupaciones
+        width: calc(var(--sizem)/1)
+        text-align: center
+        .list
+          width: calc(var(--sizem)/4)
+          @media screen and (max-width: 480px) /* 480 a  0*/
+            width: var(--sizem)
+          @media screen and (max-width: 768px) /* de 768 a cero. 0**/
+            width: var(--sizem)
