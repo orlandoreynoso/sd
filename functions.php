@@ -9,6 +9,7 @@ add_theme_support('post-thumbnails');
 //add_image_size( $name, $width, $height, $crop );
 /*========== incluyendo los estilo que uso ===============*/
 
+include (TEMPLATEPATH. '/sdincludes/funcionesgd.php');
 include (TEMPLATEPATH. '/sdincludes/estilo.php');
 include (TEMPLATEPATH. '/inc/filtros.php');
 include (TEMPLATEPATH. '/inc/paginacioncpt.php');

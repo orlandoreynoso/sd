@@ -10,7 +10,7 @@
 <body>
 
 <div class="e-menu">
-	
+
     <nav class="navbar navbar-expand-lg navbar-light">
       <?php get_template_part( 'template/header','buscador'); ?>
       <?php // get_template_part( 'template/header','menuresponsivo'); ?>
@@ -22,11 +22,11 @@
       <div class="row">
         <div class="contenedor-lm-msc">
           <div class="or-logo-cover">
-            <?php logoMsc(); ?>
+            <?php marca_sd(); ?>
           </div>
           <div class="or-menum">
             <nav class="navbar-me">
-              <?php showMenuboostrap(); ?>
+              <?php menu_sd(); ?>
             </nav>
           </div>
         </div><!-- fin contenedor-lm-msc -->

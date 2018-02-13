@@ -132,10 +132,35 @@
   flex-wrap: wrap;
   width: var(--sizem);
   justify-content: space-between;
-  align-items: center; }
+  align-items: flex-end; }
   @media screen and (min-width: 640px) and (max-width: 1000px) {
     .contenedor-lm-msc {
       justify-content: center; } }
+  .contenedor-lm-msc .or-logo-cover .sd_who {
+    padding: 10px;
+    color: #414141;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none; }
+    .contenedor-lm-msc .or-logo-cover .sd_who:hover {
+      text-decoration: none;
+      color: #009FFF;
+      transition: 0.5s ease; }
+    .contenedor-lm-msc .or-logo-cover .sd_who h2 {
+      padding: 0px;
+      margin: 0px; }
+    .contenedor-lm-msc .or-logo-cover .sd_who h3 {
+      padding: 0px;
+      margin: 0px; }
+    .contenedor-lm-msc .or-logo-cover .sd_who .sd_logo {
+      font-family: "Fjalla One", sans-serif;
+      font-size: 1.4em;
+      font-weight: 700; }
+    .contenedor-lm-msc .or-logo-cover .sd_who .sd_slogan {
+      font-size: 1.4em;
+      font-weight: 300;
+      font-family: "Roboto", sans-serif;
+      margin-top: 8px; }
   .contenedor-lm-msc .or-logo-cover .logo {
     width: 75px;
     height: 75px;
@@ -273,3 +298,235 @@
     transition: 0.5s ease; }
     .e-menu .navbar .navbar-brand img:hover {
       opacity: 0.8; }
+
+.con-general .con .interiores,
+.con-general .con .interiores-comunidad,
+.con-general .con .interior-horarios-misa {
+  padding-top: 20px; }
+  .con-general .con .interiores iframe,
+  .con-general .con .interiores-comunidad iframe,
+  .con-general .con .interior-horarios-misa iframe {
+    width: 100%;
+    height: 480px;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center; }
+    .con-general .con .interiores iframe #facebook,
+    .con-general .con .interiores-comunidad iframe #facebook,
+    .con-general .con .interior-horarios-misa iframe #facebook {
+      border: 2px solid red; }
+    @media screen and (max-width: 640px) {
+      .con-general .con .interiores iframe,
+      .con-general .con .interiores-comunidad iframe,
+      .con-general .con .interior-horarios-misa iframe {
+        height: 350px; } }
+    @media screen and (max-width: 320px) {
+      .con-general .con .interiores iframe,
+      .con-general .con .interiores-comunidad iframe,
+      .con-general .con .interior-horarios-misa iframe {
+        width: 240px;
+        height: 240px;
+        padding: 0px;
+        margin: 0px auto;
+        text-align: center; } }
+  .con-general .con .interiores video,
+  .con-general .con .interiores-comunidad video,
+  .con-general .con .interior-horarios-misa video {
+    width: 100%;
+    height: 480px;
+    padding: 0px;
+    margin: 0px auto; }
+    @media screen and (max-width: 640px) {
+      .con-general .con .interiores video,
+      .con-general .con .interiores-comunidad video,
+      .con-general .con .interior-horarios-misa video {
+        height: 350px; } }
+    @media screen and (max-width: 320px) {
+      .con-general .con .interiores video,
+      .con-general .con .interiores-comunidad video,
+      .con-general .con .interior-horarios-misa video {
+        width: 240px;
+        height: 240px;
+        padding: 0px;
+        margin: 0px auto;
+        text-align: center; } }
+  .con-general .con .interiores .header-title,
+  .con-general .con .interiores-comunidad .header-title,
+  .con-general .con .interior-horarios-misa .header-title {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative; }
+    @media screen and (max-width: 480px) {
+      .con-general .con .interiores .header-title,
+      .con-general .con .interiores-comunidad .header-title,
+      .con-general .con .interior-horarios-misa .header-title {
+        flex-flow: column; }
+        .con-general .con .interiores .header-title .titulo,
+        .con-general .con .interiores-comunidad .header-title .titulo,
+        .con-general .con .interior-horarios-misa .header-title .titulo {
+          margin-right: 14px; } }
+    .con-general .con .interiores .header-title::after,
+    .con-general .con .interiores-comunidad .header-title::after,
+    .con-general .con .interior-horarios-misa .header-title::after {
+      position: absolute;
+      right: 20px;
+      bottom: -10px;
+      content: "";
+      background-color: rgba(70, 178, 113, 0.5);
+      height: 1px;
+      display: block;
+      width: 97%; }
+  .con-general .con .interiores .mapeo .current,
+  .con-general .con .interiores-comunidad .mapeo .current,
+  .con-general .con .interior-horarios-misa .mapeo .current {
+    display: none; }
+  .con-general .con .interiores .titulos-page,
+  .con-general .con .interiores-comunidad .titulos-page,
+  .con-general .con .interior-horarios-misa .titulos-page {
+    border-right: 5px solid #009FFF;
+    padding: 0px 20px 0px 20px;
+    font-size: 1.125em;
+    text-align: right; }
+    @media screen and (max-width: 480px) {
+      .con-general .con .interiores .titulos-page,
+      .con-general .con .interiores-comunidad .titulos-page,
+      .con-general .con .interior-horarios-misa .titulos-page {
+        padding-right: 10px; } }
+
+.con-general .side {
+  padding-top: 20px; }
+  .con-general .side .entradas {
+    background-color: #f2f2f2; }
+    .con-general .side .entradas .titulo_entradas {
+      background-color: #009FFF;
+      padding: 24px 0px 17px 25px;
+      box-sizing: border-box; }
+      .con-general .side .entradas .titulo_entradas h3 {
+        font-size: 1.2em;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+        margin: 0px;
+        padding: 0px; }
+
+.con-general .side .entradas .recientes {
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px; }
+  .con-general .side .entradas .recientes .list {
+    padding: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 9px;
+    overflow: hidden;
+    border-bottom: 1px solid #009FFF;
+    text-transform: lowercase;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box; }
+    .con-general .side .entradas .recientes .list .thumb {
+      width: 20%; }
+      .con-general .side .entradas .recientes .list .thumb img {
+        height: auto;
+        display: inline-block;
+        float: left;
+        margin-right: 7px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+        border: 2px solid #ffffff;
+        width: 90%; }
+        .con-general .side .entradas .recientes .list .thumb img:hover {
+          filter: alpha(opacity=50);
+          -moz-opacity: 1.0;
+          opacity: 0.5;
+          -khml-opacity: 1.0;
+          transition: 0.5s ease;
+          box-shadow: 0 0 8px rgba(0, 120, 240, 0.8); }
+
+.con-general .side .entradas .recientes .search {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #009FFF;
+  padding-bottom: 10px;
+  margin-bottom: 5px; }
+  .con-general .side .entradas .recientes .search form {
+    box-sizing: border-box; }
+    .con-general .side .entradas .recientes .search form input[type="text"] {
+      width: 70%;
+      font-size: 0.80em; }
+    .con-general .side .entradas .recientes .search form button[type="submit"] {
+      width: 25%; }
+
+.con-general .side .entradas .recientes .list .title {
+  color: #009FFF;
+  line-height: 1.3em;
+  font-size: 1.1em;
+  text-decoration: none;
+  width: 78%;
+  text-transform: lowercase; }
+  .con-general .side .entradas .recientes .list .title:hover {
+    color: #d53132;
+    transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease; }
+  .con-general .side .entradas .recientes .list .title:first-letter {
+    text-transform: uppercase; }
+
+.instaimg img {
+  margin-bottom: 30px; }
+  .instaimg img:hover {
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    -webkit-opacity: 0.8; }
+
+#totop {
+  display: none;
+  text-decoration: none;
+  position: fixed;
+  bottom: 40px;
+  margin-left: 640px;
+  overflow: hidden;
+  width: 43px;
+  height: 28px;
+  border: none;
+  text-indent: -999px;
+  z-index: 20;
+  background: url("../images/totop.png") no-repeat left 0;
+  transition: 0s ease;
+  -o-transition: 0s ease;
+  -webkit-transition: 0s ease; }
+  #totop:hover {
+    outline: none;
+    background-position: right 0; }
+
+footer {
+  width: 100%;
+  background-color: #333333; }
+  footer #pie {
+    background-color: #333333;
+    min-height: 150px; }
+    footer #pie .group {
+      padding: 50px;
+      text-align: center;
+      color: #ffffff;
+      line-height: 1.5em;
+      font-family: 'Economica-Bold';
+      text-shadow: 1px 2px 1px #000;
+      font-size: 1.2em; }
+      footer #pie .group a {
+        color: #f7b32b;
+        text-decoration: none; }
+        footer #pie .group a:hover {
+          color: #009FFF;
+          transition: 0.5s ease; }
+
+/*=================================*/
