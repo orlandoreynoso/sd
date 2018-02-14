@@ -205,7 +205,7 @@
     transition: 0.5s ease; }
   .contenedor-lm-msc .or-menum .navbar-me ul.menu li a {
     color: #414141;
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     font-size: 0.9777em; }
     .contenedor-lm-msc .or-menum .navbar-me ul.menu li a:hover {
@@ -303,6 +303,38 @@
 .con-general .con .interiores-comunidad,
 .con-general .con .interior-horarios-misa {
   padding-top: 20px; }
+  .con-general .con .interiores .content-how,
+  .con-general .con .interiores-comunidad .content-how,
+  .con-general .con .interior-horarios-misa .content-how {
+    padding: 0px; }
+    .con-general .con .interiores .content-how img,
+    .con-general .con .interiores-comunidad .content-how img,
+    .con-general .con .interior-horarios-misa .content-how img {
+      max-width: 100%;
+      height: auto; }
+    .con-general .con .interiores .content-how .cpt-Audivisual,
+    .con-general .con .interiores-comunidad .content-how .cpt-Audivisual,
+    .con-general .con .interior-horarios-misa .content-how .cpt-Audivisual {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-family: "Roboto", sans-serif; }
+      .con-general .con .interiores .content-how .cpt-Audivisual .content-cpt,
+      .con-general .con .interiores-comunidad .content-how .cpt-Audivisual .content-cpt,
+      .con-general .con .interior-horarios-misa .content-how .cpt-Audivisual .content-cpt {
+        width: 100%;
+        background-color: green;
+        padding: 0px;
+        margin: 0px; }
+      .con-general .con .interiores .content-how .cpt-Audivisual .left,
+      .con-general .con .interiores-comunidad .content-how .cpt-Audivisual .left,
+      .con-general .con .interior-horarios-misa .content-how .cpt-Audivisual .left {
+        width: 48%; }
+      .con-general .con .interiores .content-how .cpt-Audivisual .right,
+      .con-general .con .interiores-comunidad .content-how .cpt-Audivisual .right,
+      .con-general .con .interior-horarios-misa .content-how .cpt-Audivisual .right {
+        width: 48%; }
   .con-general .con .interiores iframe,
   .con-general .con .interiores-comunidad iframe,
   .con-general .con .interior-horarios-misa iframe {

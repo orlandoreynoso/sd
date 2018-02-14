@@ -22,6 +22,7 @@ function godoy_estilos(){
 	wp_enqueue_style('fontawesome');
 	wp_enqueue_style('animate');
   wp_enqueue_style('lightbox');
+  wp_enqueue_style('magnific');
 
 	//registrar Js, agregamos al final true para que nuestros Js se cargen en el footer.
 	//wp_register_script('analitics', get_template_directory_uri().'/js/analitycs.js', array(), '1.0.0', true );
