@@ -213,6 +213,215 @@
       transition: 0.5s ease;
       color: #ffffff; }
 
+.e-menu.page-inicio-audiovisual {
+  background-color: none;
+  width: 100%; }
+  @media screen and (max-width: 640px) {
+    .e-menu.page-inicio-audiovisual {
+      background-color: #009FFF; } }
+  @media screen and (max-width: 640px) {
+    .e-menu.page-inicio-audiovisual .navbar-me {
+      display: none; } }
+  .e-menu.page-inicio-audiovisual .navbar-me ul.menu {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .e-menu.page-inicio-audiovisual .navbar-me ul.menu .current_page_item {
+      transition: 0.5s ease; }
+      .e-menu.page-inicio-audiovisual .navbar-me ul.menu .current_page_item:after {
+        width: 100%;
+        content: '';
+        display: block;
+        background-color: #009FFF;
+        height: 3px;
+        width: calc(var(--ttw)/2);
+        position: absolute;
+        left: calc( calc( 100% - ( calc(var(--ttw)/2)) ) / 2);
+        bottom: 0px;
+        z-index: 100;
+        transition: 0.5s ease; }
+    .e-menu.page-inicio-audiovisual .navbar-me ul.menu li {
+      position: relative;
+      padding: 0px 0px 0px;
+      --ttw: 100%; }
+      .e-menu.page-inicio-audiovisual .navbar-me ul.menu li:hover {
+        transition: 0.5s ease; }
+        .e-menu.page-inicio-audiovisual .navbar-me ul.menu li:hover:after {
+          width: 100%;
+          content: '';
+          display: block;
+          background-color: #009FFF;
+          height: 3px;
+          width: calc(var(--sizem)/2);
+          position: absolute;
+          left: calc( calc( 100% - ( calc(var(--sizem)/2)) ) / 2);
+          bottom: 8px;
+          z-index: 100;
+          transition: 0.5s ease; }
+      .e-menu.page-inicio-audiovisual .navbar-me ul.menu li a {
+        padding: 20px 10px 20px;
+        display: block;
+        color: #414141;
+        text-decoration: none; }
+        .e-menu.page-inicio-audiovisual .navbar-me ul.menu li a:hover {
+          color: #46b271; }
+
+/*==================Men MSC============ menu desk =============*/
+.e-menu.page-inicio-audiovisual .sticky-wrapper {
+  height: auto !important; }
+
+.e-menu.page-inicio-audiovisual #menu-desk {
+  z-index: 99999999 !important;
+  position: sticky;
+  display: block;
+  opacity: 1 !important; }
+
+.menu-desk {
+  padding: 20px; }
+  @media screen and (max-width: 640px) {
+    .menu-desk {
+      padding: 0px;
+      background: none;
+      -webkit-transition: all .5s ease .15s;
+      -moz-transition: all .5s ease .15s;
+      -o-transition: all .5s ease .15s;
+      -ms-transition: all .5s ease .15s;
+      transition: all .5s ease .15s; } }
+  @media screen and (max-width: 640px) {
+    .menu-desk .menu-coverpage {
+      display: none; } }
+
+@media screen and (max-width: 640px) {
+  .coverpage-sagradocorazon {
+    padding: 50px 20px;
+    padding: 150px 20px 150px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0px auto;
+    width: var(--sizem);
+    justify-content: center;
+    background-image: url("../images/header-msc.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; } }
+
+.coverpage-sagradocorazon .slogan {
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase; }
+  .coverpage-sagradocorazon .slogan h1 {
+    color: #f7b32b;
+    font-size: 2.6em; }
+    @media screen and (max-width: 640px) {
+      .coverpage-sagradocorazon .slogan h1 {
+        font-size: 1.8em; } }
+  .coverpage-sagradocorazon .slogan h2 {
+    color: #ffffff;
+    font-style: italic;
+    font-size: 2.2em;
+    margin-top: 10px; }
+    @media screen and (max-width: 640px) {
+      .coverpage-sagradocorazon .slogan h2 {
+        font-size: 1.5em; } }
+
+.coverpage-sagradocorazon a {
+  display: block; }
+  .coverpage-sagradocorazon a img {
+    width: auto;
+    height: 80px; }
+
+.contenedor-lm-msc {
+  box-sizing: border-box;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: var(--sizem);
+  justify-content: space-between;
+  align-items: flex-end; }
+  @media screen and (min-width: 640px) and (max-width: 1000px) {
+    .contenedor-lm-msc {
+      justify-content: center; } }
+  .contenedor-lm-msc .or-logo-cover .sd_who {
+    padding: 10px;
+    color: #fcf7bf;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none; }
+    .contenedor-lm-msc .or-logo-cover .sd_who:hover {
+      text-decoration: none;
+      color: #ffffff;
+      transition: 0.5s ease; }
+    .contenedor-lm-msc .or-logo-cover .sd_who h2 {
+      padding: 0px;
+      margin: 0px; }
+    .contenedor-lm-msc .or-logo-cover .sd_who h3 {
+      padding: 0px;
+      margin: 0px; }
+    .contenedor-lm-msc .or-logo-cover .sd_who .sd_logo {
+      font-family: "Fjalla One", sans-serif;
+      font-size: 1.4em;
+      font-weight: 700; }
+    .contenedor-lm-msc .or-logo-cover .sd_who .sd_slogan {
+      font-size: 1.4em;
+      font-weight: 300;
+      font-family: "Roboto", sans-serif;
+      margin-top: 8px; }
+  .contenedor-lm-msc .or-logo-cover .logo {
+    width: 75px;
+    height: 75px;
+    display: block; }
+    .contenedor-lm-msc .or-logo-cover .logo img {
+      width: 100%;
+      height: auto;
+      display: block; }
+  .contenedor-lm-msc .or-menum .navbar-me ul.menu li.current_page_item:after {
+    width: 100%;
+    content: '';
+    display: block;
+    background-color: #46b271;
+    height: 3px;
+    width: calc(var(--ttw)/2);
+    position: absolute;
+    left: calc( calc( 100% - ( calc(var(--ttw)/2)) ) / 2);
+    bottom: 8px;
+    z-index: 100;
+    transition: 0.5s ease; }
+  .contenedor-lm-msc .or-menum .navbar-me ul.menu li:after {
+    content: '';
+    display: block;
+    background-color: #414141;
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    z-index: 100;
+    transition: 0.5s ease; }
+  .contenedor-lm-msc .or-menum .navbar-me ul.menu li:hover:after {
+    content: '';
+    display: block;
+    background-color: #ffffff;
+    height: 3px;
+    width: calc(var(--ttw)/2);
+    position: absolute;
+    left: calc( calc( 100% - ( calc(var(--sizem)/2)) ) / 2);
+    bottom: 8px;
+    z-index: 100;
+    transition: 0.5s ease; }
+  .contenedor-lm-msc .or-menum .navbar-me ul.menu li a {
+    color: #fcf7bf;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9777em; }
+    .contenedor-lm-msc .or-menum .navbar-me ul.menu li a:hover {
+      transition: 0.5s ease;
+      color: #ffffff; }
+
 .e-menu .navbar .sm {
   margin: 0px auto 15px auto; }
   .e-menu .navbar .sm .ubicacion {

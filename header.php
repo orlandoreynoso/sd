@@ -9,7 +9,9 @@
 </head>
 <body>
 
-<div class="e-menu">
+  <?php global $post; ?>
+
+<div class="e-menu page-<?php echo strtolower($post->post_name); ?>-audiovisual">
 
     <nav class="navbar navbar-expand-lg navbar-light">
       <?php get_template_part( 'template/header','buscador'); ?>
