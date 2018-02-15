@@ -23,8 +23,8 @@
                 the_content();
               endwhile;
             ?>
-          </div>
           <div id="instafeed" class="row gallery"></div>
+          </div>
        </div>
     </div>
   </div>

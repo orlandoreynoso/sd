@@ -16,7 +16,8 @@ $(document).ready(function() {
     auto: true,
     mode: 'fade',
     captions: true,
-    slideWidth: 600
+    slideWidth: 600,
+    pager: false
   });
 
 
