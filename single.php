@@ -14,7 +14,7 @@
 
   <div class="container">
      <div class="row">
-        <div class="col-xs-12 col-md-8 con">
+        <div class="col-xs-12 col-md-12 con">
             <div class="interiores">
               <div class="titulo">
                 <div class="mapeo"><?php dimox_breadcrumbs(); ?></div>
@@ -37,17 +37,6 @@
               </div>
             </div>
        </div>
-        <div class="col-xs-12 col-md-4 side">
-          <div class="entradas">
-            <div class="titulo_entradas">
-              <h3>Entradas recientes</h3>
-            </div>
-
-            <div class="recientes">
-              <?php get_sidebar(); ?>
-            </div>
-          </div>
-        </div>
     </div>
   </div>
 
