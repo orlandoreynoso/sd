@@ -1,10 +1,10 @@
 .e-menu
 	background-color: none
 	width: 100%
-	@media screen and (max-width: 640px) /*  de 640px a 0px =====*/
+	@media screen and (max-width: 640px) 
 		background-color: $celeste
 	.navbar-me
-		@media screen and ( max-width: 640px )/*  de 640px a 0px =====*/
+		@media screen and ( max-width: 640px )
 			display: none
 		ul.menu
 			display: flex
@@ -61,33 +61,33 @@
 		opacity: 1!important
 .menu-desk
 	padding: 20px
-	@media screen and ( max-width: 640px )/* 640px a 0px =====*/
-	padding: 0px
-	background: none
-	-webkit-transition: all .5s ease .15s
-	-moz-transition: all .5s ease .15s
-	-o-transition: all .5s ease .15s
-	-ms-transition: all .5s ease .15s
-	transition: all .5s ease .15s
+	@media screen and ( max-width: 640px )
+		padding: 0px
+		background: none
+		-webkit-transition: all .5s ease .15s
+		-moz-transition: all .5s ease .15s
+		-o-transition: all .5s ease .15s
+		-ms-transition: all .5s ease .15s
+		transition: all .5s ease .15s
 	.menu-coverpage
-		@media screen and ( max-width: 640px )/* ocultarlo de 640px a 0px =====*/
+		@media screen and ( max-width: 640px )
 			display: none
 .coverpage-sagradocorazon
-	@media screen and ( max-width: 640px )/*  640px a 0px =====*/
+	@media screen and ( max-width: 640px )
 		padding: 50px 20px
-	padding: 150px 20px 150px 20px
-	box-sizing: border-box
-	display: flex
-	flex-direction: column
-	flex-wrap: wrap
-	align-items: center
-	margin: 0px auto
-	width: var(--sizem)
-	justify-content: center
-	background-image: url('../images/header-msc.jpg')
-	background-position: center
-	background-size: cover
-	background-repeat: no-repeat
+		padding: 150px 20px 150px 20px
+		box-sizing: border-box
+		display: flex
+		flex-direction: column
+		flex-wrap: wrap
+		align-items: center
+		margin: 0px auto
+		width: var(--sizem)
+		justify-content: center
+		background-image: url('../images/header-msc.jpg')
+		background-position: center
+		background-size: cover
+		background-repeat: no-repeat
 	.slogan
 		margin-top: 20px
 		text-align: center
@@ -95,14 +95,14 @@
 		h1
 			color: $m-amarillo
 			font-size: 2.6em
-			@media screen and ( max-width: 640px )/* ocultarlo de 640px a 0px =====*/
+			@media screen and ( max-width: 640px )
 				font-size: 1.8em
 		h2
 			color: $blanco
 			font-style: italic
 			font-size: 2.2em
 			margin-top: 10px
-			@media screen and ( max-width: 640px )/* ocultarlo de 640px a 0px =====*/
+			@media screen and ( max-width: 640px )
 				font-size: 1.5em
 	a
 		display: block
@@ -118,18 +118,18 @@
 	width: var(--sizem)
 	justify-content: space-between
 	align-items: flex-end
-	@media screen and ( min-width: 640px ) and (max-width: 1000px )/* valor entre 640 a 1000 */
+	@media screen and ( min-width: 640px ) and (max-width: 1000px )
 		justify-content: center
 	.or-logo-cover
 		.sd_who
 			padding: 10px
-			color: $sd-menu
+			color: $m-hueso
 			text-transform: uppercase
 			display: block
 			text-decoration: none
 			&:hover
 				text-decoration: none
-				color: $celeste
+				color: $blanco
 				transition: 0.5s ease
 			h2
 				padding: 0px
@@ -186,7 +186,7 @@
 						&:after
 							content: ''
 							display: block
-							background-color: $m-verde
+							background-color: $blanco
 							height: 3px
 							width: calc(var(--ttw)/2)
 							position: absolute
@@ -195,10 +195,10 @@
 							z-index: 100
 							transition: 0.5s ease
 					a
-						color: $sd-menu
+						color: $m-hueso
 						font-family: $froboto
 						text-transform: uppercase
 						font-size: 0.9777em
 						&:hover
 							transition: 0.5s ease
-							color: $m-verde
+							color: $blanco
