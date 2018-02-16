@@ -1,9 +1,9 @@
-.e-menu.page-inicio-audiovisual
+.e-front-page
 	background-color: none
 	width: 100%
 	@media screen and (max-width: 640px) 
 		background-color: $celeste
-	.navbar-me
+	.navbar-frontpage
 		@media screen and ( max-width: 640px )
 			display: none
 		ul.menu
@@ -51,15 +51,15 @@
 					&:hover
 						color: $m-verde
 /*==================Men MSC============ menu desk =============*/
-.e-menu.page-inicio-audiovisual
+.e-front-page
 	.sticky-wrapper
 		height: auto !important
-	#menu-desk
+	#menu-inicio
 		z-index: 99999999!important
 		position: sticky
 		display: block
 		opacity: 1!important
-.menu-desk
+.menu-inicio
 	padding: 20px
 	@media screen and ( max-width: 640px )
 		padding: 0px
@@ -69,47 +69,10 @@
 		-o-transition: all .5s ease .15s
 		-ms-transition: all .5s ease .15s
 		transition: all .5s ease .15s
-	.menu-coverpage
+	.menu-frontpage
 		@media screen and ( max-width: 640px )
 			display: none
-.coverpage-sagradocorazon
-	@media screen and ( max-width: 640px )
-		padding: 50px 20px
-		padding: 150px 20px 150px 20px
-		box-sizing: border-box
-		display: flex
-		flex-direction: column
-		flex-wrap: wrap
-		align-items: center
-		margin: 0px auto
-		width: var(--sizem)
-		justify-content: center
-		background-image: url('../images/header-msc.jpg')
-		background-position: center
-		background-size: cover
-		background-repeat: no-repeat
-	.slogan
-		margin-top: 20px
-		text-align: center
-		text-transform: uppercase
-		h1
-			color: $m-amarillo
-			font-size: 2.6em
-			@media screen and ( max-width: 640px )
-				font-size: 1.8em
-		h2
-			color: $blanco
-			font-style: italic
-			font-size: 2.2em
-			margin-top: 10px
-			@media screen and ( max-width: 640px )
-				font-size: 1.5em
-	a
-		display: block
-		img
-			width: auto
-			height: 80px
-.contenedor-lm-msc
+.contenedor-frontpage
 	box-sizing: border-box
 	padding: 5px
 	display: flex
@@ -123,20 +86,30 @@
 	.or-logo-cover
 		.sd_who
 			padding: 10px
-			color: $m-hueso
+			color: $sd-limon-oscuro
 			text-transform: uppercase
 			display: block
 			text-decoration: none
+			transition: 0.5s ease
+			@media screen and (max-width: 800px)
+				color: $sd-gris
+				text-align: center
 			&:hover
 				text-decoration: none
 				color: $blanco
 				transition: 0.5s ease
+				@media screen and (max-width: 800px)
+					color: $sd-limon-oscuro
 			h2
 				padding: 0px
 				margin: 0px
+				@media screen and (max-width: 800px)
+					text-align: center
 			h3
 				padding: 0px
 				margin: 0px
+				@media screen and (max-width: 800px)
+					text-align: center
 			.sd_logo
 				font-family: $fjalla
 				font-size: 1.4em
@@ -154,8 +127,8 @@
 				width: 100%
 				height: auto
 				display: block
-	.or-menum
-		.navbar-me
+	.or-frontpage
+		.navbar-frontpage
 			ul.menu
 				li.current_page_item
 					&:after
@@ -194,11 +167,17 @@
 							bottom: 8px
 							z-index: 100
 							transition: 0.5s ease
+							@media screen and (max-width: 800px)
+								background-color: $sd-limon-oscuro
 					a
-						color: $m-hueso
+						color: $sd-limon-oscuro
 						font-family: $froboto
 						text-transform: uppercase
 						font-size: 0.9777em
+						@media screen and (max-width: 800px)
+							color: $sd-gris
 						&:hover
 							transition: 0.5s ease
 							color: $blanco
+							@media screen and (max-width: 800px)
+								color: $sd-limon-oscuro
