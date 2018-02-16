@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 	//console.log(admin_url);
 
-		$('#videoreal').on('click', function (){
+		$('#videoreal ul li .datos').on('click', function (){
 			$(this).siblings().removeClass('seleccionada');
 			$(this).siblings().removeAttr('data-seleccionada');
 			$(this).addClass('seleccionada');
@@ -13,7 +13,7 @@ $(document).ready(function() {
 			var id_respuestas = [];
 
 			var datos =  {
-				action: 'quizbooK_resultados',
+				action: 'resultados_visuales',
 				data: id_respuestas
 			}
 

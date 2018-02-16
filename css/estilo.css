@@ -829,6 +829,10 @@
   .con-general .side .entradas .recientes .list .title:first-letter {
     text-transform: uppercase; }
 
+.visuales .seleccionada {
+  background-color: magenta;
+  padding: 20px; }
+
 .visuales .video {
   transition: 0.5s ease; }
   .visuales .video:hover {
