@@ -829,6 +829,13 @@
   .con-general .side .entradas .recientes .list .title:first-letter {
     text-transform: uppercase; }
 
+.visuales .video {
+  transition: 0.5s ease; }
+  .visuales .video:hover {
+    cursor: pointer;
+    transition: 0.5s ease;
+    opacity: 0.4; }
+
 .instaimg img {
   margin-bottom: 30px; }
   .instaimg img:hover {

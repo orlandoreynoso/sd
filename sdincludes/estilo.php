@@ -37,7 +37,9 @@ function godoy_estilos(){
   wp_register_script('magnific', get_template_directory_uri().'/js/magnific.min.js', array('jquery'),'2.9.0', true);
   wp_register_script('senderfeed', get_template_directory_uri().'/js/senderfeed.js', array('jquery'),'2.9.0', true);
 	wp_register_script('scriptslider', get_stylesheet_directory_uri().'/sdincludes/scripts.js', array('jquery'),'1.0.0', true);
-	wp_enqueue_script('jquery');
+  wp_register_script('frontajax', get_stylesheet_directory_uri().'/sdincludes/front-ajax.js', array('jquery'),'1.0.0', true);
+	
+  wp_enqueue_script('jquery');
 	//wp_enqueue_script('analitics');
   wp_enqueue_script('popper');
 	wp_enqueue_script('bootstrapjs');
@@ -47,7 +49,16 @@ function godoy_estilos(){
   wp_enqueue_script('magnific');
   wp_enqueue_script('senderfeed');
 	wp_enqueue_script('scriptslider');
+  wp_enqueue_script('frontajax');
 
+  /*cargando archivo para usar ajax*/
+  wp_localize_script( 
+    'frontajax', 
+    'admin_url',   
+    array(
+       // datos que vamos a enviar
+      'ajax_url' => admin_url('admin-ajax.php')
+    ));
 
 }
 
