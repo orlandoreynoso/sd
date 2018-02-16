@@ -2,8 +2,7 @@
   <div class="sm">
     <div class="ubicacion">
       <span class="icon fa fa-map-marker"></span>
-      <span id="texto">Mixco, Guatemala</span>
-    </div>
-    <div class="search"><?php  get_search_form(); ?></div>
+      <span id="texto">Huelva, España</span>
+    </div>    
   </div>
 </div>

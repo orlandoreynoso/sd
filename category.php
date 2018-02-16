@@ -17,9 +17,14 @@
           <div class="col-xs-12 col-md-12 con">
           <?php // echo "estoy en category";  ?>
 
-          <div class="titulo">
-            <div class="mapeo"><?php dimox_breadcrumbs(); ?></div>
-          </div>
+            <!--div class="header-title">
+              <div class="titulo">
+                <div class="mapeo"><?php // dimox_breadcrumbs(); ?></div>
+              </div>
+              <div class="titulos-page">
+                <?php  // the_title(); ?>
+              </div>
+            </div -->
           <?php if ( have_posts() ) : ?>
             <?php while ( have_posts() ) : the_post(); ?>
            <div class="interiores">

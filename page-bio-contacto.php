@@ -10,14 +10,14 @@
      <div class="row">
           <div class="col-xs-12 col-md-12 con">
           <div class="interiores">
-            <div class="header-title">
+            <!--div class="header-title">
               <div class="titulo">
-                <div class="mapeo"><?php dimox_breadcrumbs(); ?></div>
+                <div class="mapeo"><?php // dimox_breadcrumbs(); ?></div>
               </div>
               <div class="titulos-page">
-                <?php the_title(); ?>
+                <?php  // the_title(); ?>
               </div>
-            </div>
+            </div -->
             <div class="content-how">
               <?php
               while ( have_posts() ) : the_post();
@@ -36,12 +36,12 @@
                 <div class="content-cpt">
                   <?php the_content(); ?>
                 </div>
-              <div class="left">
-                <?php echo get_post_meta( get_the_ID(), 'content_left', true ); ?>
-              </div>
-              <div class="right">
-                <?php echo get_post_meta( get_the_ID(), 'content_right', true ); ?>
-              </div>
+                <div class="left">
+                  <?php echo get_post_meta( get_the_ID(), 'content_left', true ); ?>
+                </div>
+                <div class="right">
+                  <?php echo get_post_meta( get_the_ID(), 'content_right', true ); ?>
+                </div>
               <?php endwhile; wp_reset_postdata();?>
             </div>
             </div>

@@ -1,6 +1,7 @@
 <div class="e-menu">
 
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-lg navbar-light sd-general">
+    <?php get_template_part( 'template/header','buscador'); ?>
     <?php // get_template_part( 'template/header','menuresponsivo'); ?>
     <?php get_template_part( 'template/header','menumovil'); ?>
   </nav>

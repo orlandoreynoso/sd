@@ -10,14 +10,14 @@
      <div class="row">
           <div class="col-xs-12 col-md-12 con">
           <div class="interiores">
-            <div class="header-title">
+            <!--div class="header-title">
               <div class="titulo">
-                <div class="mapeo"><?php dimox_breadcrumbs(); ?></div>
+                <div class="mapeo"><?php // dimox_breadcrumbs(); ?></div>
               </div>
               <div class="titulos-page">
-                <?php the_title(); ?>
+                <?php  // the_title(); ?>
               </div>
-            </div>
+            </div -->
             <?php
               while ( have_posts() ) : the_post();
                 the_content();

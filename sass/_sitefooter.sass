@@ -20,21 +20,45 @@
 footer
   width: 100%
   background-color: $m-grisoscuro
-  #pie
+  .pie
     background-color: $m-grisoscuro
     min-height: 150px
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    width: 100%
+    box-sizing: border-box
+    padding-top: 30px
+    padding-bottom: 30px
+    .footer-left
+      width: 49%
+      p
+        font-family: $froboto
+        margin: 0px
+        padding: 0px
+        color: $sd-blanco
+        font-size: 0.9em
+      a
+        color: $sd-limon
+        text-decoration: none
+        &:hover
+          color: $sd-limon-oscuro
+          transition: 0.5s ease
+    .search
+      width: 100%
+      padding-top: 20px
+    .footer-right      
+      width: 49%
+      color: $sd-blanco
+      float: right
     .group
-      padding: 50px
+      width: 100%
       text-align: center
       color: $blanco
       line-height: 1.5em
       font-family: 'Economica-Bold'
       text-shadow: 1px 2px 1px #000
       font-size: 1.2em
-      a
-        color: $m-amarillo
-        text-decoration: none
-        &:hover
-          color: $celeste
-          transition: 0.5s ease
+      background-color: red
 /*=================================*/
