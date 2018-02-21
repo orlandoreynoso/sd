@@ -22,6 +22,7 @@ the_post_thumbnail('pastorales', 751, 422, true);
 the_post_thumbnail('comunidades', 1100, 404, true);
 the_post_thumbnail('slider', 2000, 650, true);
 add_image_size('slider', 2000, 650, true);
+add_image_size('video', 305, 172, true);
 the_post_thumbnail('full'); // La resolución original
 //set_post_thumbnail_size(1024,1024,true );
 

@@ -68,10 +68,10 @@
   display: block;
   opacity: 1 !important; }
 
-.menu-desk {
+.e-menu .menu-desk {
   padding: 20px; }
   @media screen and (max-width: 640px) {
-    .menu-desk {
+    .e-menu .menu-desk {
       padding: 0px;
       background: none;
       -webkit-transition: all .5s ease .15s;
@@ -80,10 +80,10 @@
       -ms-transition: all .5s ease .15s;
       transition: all .5s ease .15s; } }
   @media screen and (max-width: 640px) {
-    .menu-desk .menu-coverpage {
+    .e-menu .menu-desk .menu-coverpage {
       display: none; } }
 
-.contenedor-lm-msc {
+.e-menu .contenedor-lm-msc {
   box-sizing: border-box;
   padding: 5px;
   display: flex;
@@ -93,43 +93,43 @@
   justify-content: space-between;
   align-items: flex-end; }
   @media screen and (min-width: 640px) and (max-width: 1000px) {
-    .contenedor-lm-msc {
+    .e-menu .contenedor-lm-msc {
       justify-content: center; } }
-  .contenedor-lm-msc .or-logo-cover .sd_who {
+  .e-menu .contenedor-lm-msc .or-logo-cover .sd_who {
     padding: 10px;
     color: #333333;
     text-transform: uppercase;
     display: block;
     text-decoration: none;
     transition: 0.5s ease; }
-    .contenedor-lm-msc .or-logo-cover .sd_who:hover {
+    .e-menu .contenedor-lm-msc .or-logo-cover .sd_who:hover {
       text-decoration: none;
       transition: 0.5s ease;
       color: #cccc00; }
-    .contenedor-lm-msc .or-logo-cover .sd_who h2 {
+    .e-menu .contenedor-lm-msc .or-logo-cover .sd_who h2 {
       padding: 0px;
       margin: 0px; }
-    .contenedor-lm-msc .or-logo-cover .sd_who h3 {
+    .e-menu .contenedor-lm-msc .or-logo-cover .sd_who h3 {
       padding: 0px;
       margin: 0px; }
-    .contenedor-lm-msc .or-logo-cover .sd_who .sd_logo {
+    .e-menu .contenedor-lm-msc .or-logo-cover .sd_who .sd_logo {
       font-family: "Fjalla One", sans-serif;
       font-size: 1.4em;
       font-weight: 700; }
-    .contenedor-lm-msc .or-logo-cover .sd_who .sd_slogan {
+    .e-menu .contenedor-lm-msc .or-logo-cover .sd_who .sd_slogan {
       font-size: 1.4em;
       font-weight: 300;
       font-family: "Roboto", sans-serif;
       margin-top: 8px; }
-  .contenedor-lm-msc .or-logo-cover .logo {
+  .e-menu .contenedor-lm-msc .or-logo-cover .logo {
     width: 75px;
     height: 75px;
     display: block; }
-    .contenedor-lm-msc .or-logo-cover .logo img {
+    .e-menu .contenedor-lm-msc .or-logo-cover .logo img {
       width: 100%;
       height: auto;
       display: block; }
-  .contenedor-lm-msc .or-menum .navbar-me ul.menu li.current_page_item:after {
+  .e-menu .contenedor-lm-msc .or-menum .navbar-me ul.menu li.current_page_item:after {
     width: 100%;
     content: '';
     display: block;
@@ -141,7 +141,7 @@
     bottom: 8px;
     z-index: 100;
     transition: 0.5s ease; }
-  .contenedor-lm-msc .or-menum .navbar-me ul.menu li:after {
+  .e-menu .contenedor-lm-msc .or-menum .navbar-me ul.menu li:after {
     content: '';
     display: block;
     background-color: #cccc00;
@@ -152,7 +152,7 @@
     bottom: 8px;
     z-index: 100;
     transition: 0.5s ease; }
-  .contenedor-lm-msc .or-menum .navbar-me ul.menu li:hover:after {
+  .e-menu .contenedor-lm-msc .or-menum .navbar-me ul.menu li:hover:after {
     content: '';
     display: block;
     background-color: #ffffff;
@@ -163,12 +163,12 @@
     bottom: 8px;
     z-index: 100;
     transition: 0.5s ease; }
-  .contenedor-lm-msc .or-menum .navbar-me ul.menu li a {
+  .e-menu .contenedor-lm-msc .or-menum .navbar-me ul.menu li a {
     color: #333333;
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     font-size: 0.9777em; }
-    .contenedor-lm-msc .or-menum .navbar-me ul.menu li a:hover {
+    .e-menu .contenedor-lm-msc .or-menum .navbar-me ul.menu li a:hover {
       transition: 0.5s ease;
       color: #cccc00; }
 
@@ -858,7 +858,7 @@
         .visuales .full .visual-full p iframe {
           width: 100%; }
   .visuales .small {
-    width: 100%; }
+    width: 25%; }
     .visuales .small .visual-small {
       width: 100%;
       box-sizing: border-box; }
@@ -871,9 +871,9 @@
         display: block;
         width: 100%;
         height: auto; }
-  .visuales .videosd {
+  .visuales .videosd.small {
     transition: 0.5s ease; }
-    .visuales .videosd:hover {
+    .visuales .videosd.small:hover {
       cursor: pointer; }
 
 .instaimg img {

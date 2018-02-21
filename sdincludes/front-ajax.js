@@ -9,23 +9,23 @@ $(document).ready(function() {
 			e.preventDefault();
 
 			var id = $(this).attr('data-id');
+			var nombrecpt = $(this).attr('data-videoname');
+			var videofull = $('.visuales .full#videoreal');
 
-//			console.log(id);
-/* luego lo veo
-			$(this).removeClass('seleccionada');
-			$(this).removeAttr('data-videosloads');
-			$(this).addClass('seleccionada');
-			$(this).attr('data-videosloads', true); */
+			function borra_div(){
+				$('.visuales .full#videoreal').addClass('nuevo-full');
+				$('.visuales .full ul.visual-full').remove();
+				$('.visuales .full#videoreal .getajax').remove();
+			}
 
-
-		//$('.visuales .full .visual-full li.datos').html("Hola");
 
 			var id_respuestas = [];
 
 			var datos =  {
 				'action': 'resultados_visuales',
 				'id': id,
-				'tipo': 'mostrar'
+				'tipo': 'mostrar',
+				'namecpt': nombrecpt,
 			}
 
 
@@ -34,35 +34,29 @@ $(document).ready(function() {
 				url: admin_url.ajax_url,
 				type: 'post',
 				data: datos,
+				beforeSend: function(){
+//				console.log("cargando..");
+				videofull.html('Cargando ...');
+				},
 				success: function(data){
-						console.log(data);
-						// console.log(typeof(data));
-						// eval('var resultado='+ data);
-						// alert(resultado.idvideo);
-						//var resultado = JSON.parse(data);
-						//var resultado = json.decoder(data);
-						//var resultado = data;
-//						console.log(resultado.idvideo);
-						//console.log(typeof(resultado));
-						console.log("susss");
+				videofull.html('');
+
 				}
 			}).done(function(respuesta){ // método que envía la peticion y va  a resivir la respueta de regreso.
-					console.log("-----");
-					console.log(respuesta);
-					console.log(typeof(respuesta));
-// 					var resultado = id_respuestas.push(respuesta);
-// 					var resultado = JSON.parse(id_respuestas);
-// //					var resultado = JSON.parse(resultado);
-// 					console.log(typeof(resultado));
-					// var temp = http.responseText;
-				// console.log(resultado);
-					// $.each(respuesta, function (index) {
-					//       console.log(index.id);
-					//       $.each(this.children, function (children) {
-					//          console.log(children.id);
-					//       });
-					// });
+//					console.log("--DONE--");
+//					console.log(respuesta);
+//					console.log("--end log--");
+					var resultado = JSON.parse(respuesta);
+//					console.log(typeof(resultado ));
+//					console.log(resultado );
+//					console.log("--end parse--");
+//					console.log("Video Actual: " + resultado[0].imagen);
 
+					var     informacion = '<div class="getajax" data-id= "<?php echo get_the_id(); ?>">';
+						informacion += resultado[0].contenido;
+						informacion += '</div>';
+						borra_div();
+						videofull.append(informacion);
 
 			});
 

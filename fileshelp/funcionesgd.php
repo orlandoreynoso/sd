@@ -10,8 +10,7 @@ $cptname = $_POST['namecpt'];
 $envio = array(
 'post_type' => 'videoteca',
 'posts_per_page' => 1,
-'page_id'       => ''.$idVideoSelect.'',
-//'pagename' => $cptname
+'pagename' => $cptname
 );
 
 
