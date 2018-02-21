@@ -33,6 +33,9 @@ footer
     padding-bottom: 30px
     .footer-left
       width: 49%
+      @media screen and ( max-width: 640px )
+        width: 100%
+        text-align: center
       p
         font-family: $froboto
         margin: 0px
@@ -48,10 +51,14 @@ footer
     .search
       width: 100%
       padding-top: 20px
-    .footer-right      
+    .footer-right
       width: 49%
       color: $sd-blanco
       float: right
+      @media screen and ( max-width: 640px )
+        width: 100%
+        text-align: center
+        margin-top: 12px
     .group
       width: 100%
       text-align: center

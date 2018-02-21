@@ -38,7 +38,7 @@ function godoy_estilos(){
   wp_register_script('senderfeed', get_template_directory_uri().'/js/senderfeed.js', array('jquery'),'2.9.0', true);
 	wp_register_script('scriptslider', get_stylesheet_directory_uri().'/sdincludes/scripts.js', array('jquery'),'1.0.0', true);
   wp_register_script('frontajax', get_stylesheet_directory_uri().'/sdincludes/front-ajax.js', array('jquery'),'1.0.0', true);
-	
+
   wp_enqueue_script('jquery');
 	//wp_enqueue_script('analitics');
   wp_enqueue_script('popper');
@@ -52,12 +52,13 @@ function godoy_estilos(){
   wp_enqueue_script('frontajax');
 
   /*cargando archivo para usar ajax*/
-  wp_localize_script( 
-    'frontajax', 
-    'admin_url',   
+  wp_localize_script(
+    'frontajax',
+    'admin_url',
     array(
        // datos que vamos a enviar
-      'ajax_url' => admin_url('admin-ajax.php')
+      'id_video' => 25,
+      'ajax_url' => admin_url('admin-ajax.php'),
     ));
 
 }

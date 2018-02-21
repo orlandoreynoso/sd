@@ -620,15 +620,21 @@
       .con-general .con .interior-horarios-misa .content-how .cpt-Audivisual .left {
         width: 48%; }
         .con-general .con .interiores .content-how .cpt-Audivisual .left h3,
+        .con-general .con .interiores .content-how .cpt-Audivisual .left h2,
         .con-general .con .interiores-comunidad .content-how .cpt-Audivisual .left h3,
-        .con-general .con .interior-horarios-misa .content-how .cpt-Audivisual .left h3 {
+        .con-general .con .interiores-comunidad .content-how .cpt-Audivisual .left h2,
+        .con-general .con .interior-horarios-misa .content-how .cpt-Audivisual .left h3,
+        .con-general .con .interior-horarios-misa .content-how .cpt-Audivisual .left h2 {
           line-height: 1.5em;
           font-weight: lighter;
           font-size: 1.0em;
           font-family: "Roboto", sans-serif; }
           .con-general .con .interiores .content-how .cpt-Audivisual .left h3 strong,
+          .con-general .con .interiores .content-how .cpt-Audivisual .left h2 strong,
           .con-general .con .interiores-comunidad .content-how .cpt-Audivisual .left h3 strong,
-          .con-general .con .interior-horarios-misa .content-how .cpt-Audivisual .left h3 strong {
+          .con-general .con .interiores-comunidad .content-how .cpt-Audivisual .left h2 strong,
+          .con-general .con .interior-horarios-misa .content-how .cpt-Audivisual .left h3 strong,
+          .con-general .con .interior-horarios-misa .content-how .cpt-Audivisual .left h2 strong {
             display: block;
             margin-bottom: 6px;
             margin-top: 6px; }
@@ -641,8 +647,11 @@
       .con-general .con .interior-horarios-misa .content-how .cpt-Audivisual .right {
         width: 48%; }
         .con-general .con .interiores .content-how .cpt-Audivisual .right h3,
+        .con-general .con .interiores .content-how .cpt-Audivisual .right h2,
         .con-general .con .interiores-comunidad .content-how .cpt-Audivisual .right h3,
-        .con-general .con .interior-horarios-misa .content-how .cpt-Audivisual .right h3 {
+        .con-general .con .interiores-comunidad .content-how .cpt-Audivisual .right h2,
+        .con-general .con .interior-horarios-misa .content-how .cpt-Audivisual .right h3,
+        .con-general .con .interior-horarios-misa .content-how .cpt-Audivisual .right h2 {
           line-height: 1.5em;
           font-weight: lighter;
           font-size: 1.0em;
@@ -829,16 +838,43 @@
   .con-general .side .entradas .recientes .list .title:first-letter {
     text-transform: uppercase; }
 
-.visuales .seleccionada {
-  background-color: magenta;
-  padding: 20px; }
-
-.visuales .video {
-  transition: 0.5s ease; }
-  .visuales .video:hover {
-    cursor: pointer;
-    transition: 0.5s ease;
-    opacity: 0.4; }
+.visuales {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #333333; }
+  .visuales ul li {
+    list-style: none; }
+  .visuales .full {
+    width: 100%; }
+    .visuales .full .visual-full {
+      width: 100%;
+      box-sizing: border-box; }
+      .visuales .full .visual-full p {
+        margin: 0px;
+        padding: 0px; }
+        .visuales .full .visual-full p iframe {
+          width: 100%; }
+  .visuales .small {
+    width: 100%; }
+    .visuales .small .visual-small {
+      width: 100%;
+      box-sizing: border-box; }
+      .visuales .small .visual-small p {
+        margin: 0px;
+        padding: 0px; }
+        .visuales .small .visual-small p iframe {
+          width: 100%; }
+      .visuales .small .visual-small li img {
+        display: block;
+        width: 100%;
+        height: auto; }
+  .visuales .videosd {
+    transition: 0.5s ease; }
+    .visuales .videosd:hover {
+      cursor: pointer; }
 
 .instaimg img {
   margin-bottom: 30px; }
@@ -846,6 +882,49 @@
     opacity: 0.8;
     -moz-opacity: 0.8;
     -webkit-opacity: 0.8; }
+
+.footer-right .or-redes {
+  box-sizing: border-box;
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+  width: 100%; }
+  .footer-right .or-redes .sociales {
+    width: 100%;
+    padding: 0px;
+    text-align: center; }
+    .footer-right .or-redes .sociales ul.menu {
+      text-align: center;
+      list-style: none;
+      padding: 0px 0px 0px 0px; }
+      .footer-right .or-redes .sociales ul.menu .sr-text {
+        display: none; }
+      .footer-right .or-redes .sociales ul.menu li {
+        margin-right: 10px;
+        display: inline-block; }
+        .footer-right .or-redes .sociales ul.menu li a {
+          text-decoration: none;
+          transition: 0.5s ease;
+          color: #ffff00 !important; }
+          .footer-right .or-redes .sociales ul.menu li a:hover {
+            color: #cccc00 !important; }
+        .footer-right .or-redes .sociales ul.menu li a::before {
+          font-family: 'FontAwesome';
+          content: '\f08e';
+          font-size: 2.1em;
+          -webkit-font-smoothing: antialiased;
+          text-decoration: none; }
+        .footer-right .or-redes .sociales ul.menu li a[href*="facebook.com"]::before {
+          content: '\f09a'; }
+        .footer-right .or-redes .sociales ul.menu li a[href*="twitter.com"]::before {
+          content: '\f099'; }
+        .footer-right .or-redes .sociales ul.menu li a[href*="youtube.com"]::before {
+          content: '\f16a'; }
+        .footer-right .or-redes .sociales ul.menu li a[href*="instagram.com"]::before {
+          content: '\f16d'; }
+        .footer-right .or-redes .sociales ul.menu li a[href*="vimeo.com"]::before {
+          content: '\f194'; }
+        .footer-right .or-redes .sociales ul.menu li a[href*="linkedin.com"]::before {
+          content: '\f08c'; }
 
 .c-slider {
   width: 100%;
@@ -906,6 +985,8 @@
         padding: 0px;
         position: absolute;
         bottom: 10px; }
+        .c-slider .bx-wrapper .bx-controls .bx-pager .bx-pager-item {
+          font-size: 1.2em; }
 
 input[type="text"],
 input[type="tel"],
@@ -995,6 +1076,10 @@ footer {
     padding-bottom: 30px; }
     footer .pie .footer-left {
       width: 49%; }
+      @media screen and (max-width: 640px) {
+        footer .pie .footer-left {
+          width: 100%;
+          text-align: center; } }
       footer .pie .footer-left p {
         font-family: "Roboto", sans-serif;
         margin: 0px;
@@ -1014,6 +1099,11 @@ footer {
       width: 49%;
       color: #ffffff;
       float: right; }
+      @media screen and (max-width: 640px) {
+        footer .pie .footer-right {
+          width: 100%;
+          text-align: center;
+          margin-top: 12px; } }
     footer .pie .group {
       width: 100%;
       text-align: center;

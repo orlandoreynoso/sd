@@ -1,0 +1,40 @@
+.visuales
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  width: 100%
+  box-sizing: border-box
+  border-bottom: 1px solid $sd-gris
+  ul
+    li
+      list-style: none
+  .seleccionada
+  .full
+    width: 100%
+    .visual-full
+      width: 100%
+      box-sizing: border-box
+      p
+        margin: 0px
+        padding: 0px
+        iframe
+          width: 100%
+  .small
+    width: 100%
+    .visual-small
+      width: 100%
+      box-sizing: border-box
+      p
+        margin: 0px
+        padding: 0px
+        iframe
+          width: 100%
+      li
+        img
+          display: block
+          width: 100%
+          height: auto
+  .videosd
+    transition: 0.5s ease
+    &:hover
+      cursor: pointer

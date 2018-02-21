@@ -1,4 +1,35 @@
 <?php
+/*
+* Funcion para ajax
+*/
+function resultados_visuales(){
+//echo "..";
+  if (isset($_POST['id'])) {
+    if ($_POST['tipo']=='mostrar') {
+      global $post;
+//      global $wpdb;
+
+      $id_video = $_POST['id'];
+//      echo $id_video;
+      $respuesta = array(
+        //'respuesta' => 'informacion',
+        //'datio' => 'este otro dato',
+        'idvideo' => $id_video
+      );
+
+    //  echo "enviado";
+    }
+  }
+
+  //header('Content-type: application/json');
+//  echo json_encode($_POST);
+  die(json_encode($respuesta));
+}
+
+//add_action('wp_ajax_nopriv_resultados_visuales','resultados_visuales' );
+add_action('wp_ajax_resultados_visuales','resultados_visuales' );
+
+
 
 function marca_sd(){ ?>
   <a class="sd_who" href="<?php echo esc_url( home_url( '/' ) ); ?>">
@@ -28,5 +59,13 @@ function menu_sd(){
     );
     wp_nav_menu($args);
 }
+
+function menus_generales(){
+  register_nav_menus(array(
+    'menu-redes'=>__('Menu Redes','godoy')
+  ));
+}
+
+add_action('init','menus_generales');
 
 ?>

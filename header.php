@@ -9,20 +9,17 @@
 </head>
 <body>
 
-<?php 
-  global $post; 
+<?php
+  global $post;
 
 
-  if ($post->post_name === 'inicio') { 
+  if ($post->post_name === 'inicio') {
 
   get_template_part( 'sdincludes/menu', 'frontpage');
-  
+
 } else {
   get_template_part( 'sdincludes/menu', 'general');
 }
 
 
 ?>
-
-
-
