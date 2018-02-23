@@ -24,7 +24,7 @@
               endwhile;
             ?>
           <div class="visuales">
-            <?php
+		        <?php
 
               global $post;
 
@@ -68,6 +68,7 @@
             */ ?>
             <?php ?>
               <?php while ($ultima-> have_posts()): $ultima-> the_post() ?>
+                <span id="cargavisual" class="cargavisual" data-imgcarga="<?php echo $carga = IMAGES.'/loading.gif'; ?>"></span>
                   <div class="videosd full" id="videoreal">
                     <ul class="visual-full">
                       <li class="datos ok" data-id= "<?php echo get_the_id(); ?>" data-videoname="<?php /* echo $post->post_name; */ echo get_the_title(); ?>">

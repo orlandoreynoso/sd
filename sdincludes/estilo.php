@@ -12,7 +12,7 @@ function godoy_estilos(){
 	wp_register_style('fontawesome', get_template_directory_uri().'/css/font-awesome.min.css', array('bootstrap'), '4.7.0');
 	wp_register_style('animate', get_template_directory_uri().'/css/animate.css', array('bootstrap'), '4.7.0');
   wp_register_style('lightbox', get_template_directory_uri().'/css/lightbox.css', array(), '2.9.0');
-  wp_register_style('magnific', get_template_directory_uri().'/css/magnific.css', array('bootstrap'), '4.7.0');
+
 
 	//Llamar a los estilos
 	wp_enqueue_style('style');
@@ -23,8 +23,7 @@ function godoy_estilos(){
 	wp_enqueue_style('fontawesome');
 	wp_enqueue_style('animate');
   wp_enqueue_style('lightbox');
-  wp_enqueue_style('magnific');
-  wp_enqueue_style('bxslider');
+    wp_enqueue_style('bxslider');
 
 	//registrar Js, agregamos al final true para que nuestros Js se cargen en el footer.
 	//wp_register_script('analitics', get_template_directory_uri().'/js/analitycs.js', array(), '1.0.0', true );
@@ -33,9 +32,7 @@ function godoy_estilos(){
   wp_register_script('bxslider', get_stylesheet_directory_uri().'/js/jquery.bxslider.min.js', array('jquery'),'4.0.0', true);
   wp_register_script('scripts', get_template_directory_uri().'/js/scripts.js', array('jquery'),'1.0.0', true);
   wp_register_script('lightbox', get_template_directory_uri().'/js/lightbox.js', array('jquery'),'2.9.0', true);
-  wp_register_script('instafeed', get_template_directory_uri().'/js/instafeed.min.js', array('jquery'),'2.9.0', true);
-  wp_register_script('magnific', get_template_directory_uri().'/js/magnific.min.js', array('jquery'),'2.9.0', true);
-  wp_register_script('senderfeed', get_template_directory_uri().'/js/senderfeed.js', array('jquery'),'2.9.0', true);
+
 	wp_register_script('scriptslider', get_stylesheet_directory_uri().'/sdincludes/scripts.js', array('jquery'),'1.0.0', true);
   wp_register_script('frontajax', get_stylesheet_directory_uri().'/sdincludes/front-ajax.js', array('jquery'),'1.0.0', true);
 
@@ -45,9 +42,6 @@ function godoy_estilos(){
 	wp_enqueue_script('bootstrapjs');
   wp_enqueue_script('bxslider');
   wp_enqueue_script('lightbox');
-  wp_enqueue_script('instafeed');
-  wp_enqueue_script('magnific');
-  wp_enqueue_script('senderfeed');
 	wp_enqueue_script('scriptslider');
   wp_enqueue_script('frontajax');
 
@@ -64,6 +58,22 @@ function godoy_estilos(){
 }
 
 add_action('wp_enqueue_scripts','godoy_estilos');
+
+function mqw_scripts_paginas(){
+		if(is_page('fotografia')){
+          wp_register_style('magnific', get_template_directory_uri().'/css/magnific.css', array('bootstrap'), '4.7.0');
+          wp_enqueue_style('magnific');
+
+          wp_register_script('instafeed', get_template_directory_uri().'/js/instafeed.min.js', array('jquery'),'2.9.0', true);
+          wp_register_script('magnific', get_template_directory_uri().'/js/magnific.min.js', array('jquery'),'2.9.0', true);
+          wp_register_script('senderfeed', get_template_directory_uri().'/js/senderfeed.js', array('jquery'),'2.9.0', true);
+          wp_enqueue_script('instafeed');
+          wp_enqueue_script('magnific');
+          wp_enqueue_script('senderfeed');          
+
+      }
+}
+add_action('template_redirect','mqw_scripts_paginas');
 
 
 ?>

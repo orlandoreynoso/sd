@@ -848,17 +848,46 @@
   .visuales ul li {
     list-style: none; }
   .visuales .full {
-    width: 100%; }
-    .visuales .full .visual-full {
+    width: 100%;
+    margin: 0px auto;
+    box-sizing: border-box;
+    text-align: center; }
+    .visuales .full .datos {
       width: 100%;
       box-sizing: border-box; }
-      .visuales .full .visual-full p {
+      .visuales .full .datos p {
         margin: 0px;
         padding: 0px; }
-        .visuales .full .visual-full p iframe {
-          width: 100%; }
+      .visuales .full .datos iframe {
+        max-width: 937px;
+        height: 529px; }
+        @media screen and (max-width: 640px) {
+          .visuales .full .datos iframe {
+            width: 100%;
+            height: 350px; } }
+        @media screen and (max-width: 300px) {
+          .visuales .full .datos iframe {
+            width: 100%;
+            height: 250px; } }
+      .visuales .full .datos a {
+        color: transparent; }
+    .visuales .full .loadingnow {
+      margin: 0px auto;
+      width: 40px;
+      height: 40px;
+      display: block;
+      text-align: center; }
   .visuales .small {
     width: 25%; }
+    @media screen and (max-width: 850px) {
+      .visuales .small {
+        width: 33.333%; } }
+    @media screen and (max-width: 640px) {
+      .visuales .small {
+        width: 50%; } }
+    @media screen and (max-width: 300px) {
+      .visuales .small {
+        width: 80%; } }
     .visuales .small .visual-small {
       width: 100%;
       box-sizing: border-box; }
