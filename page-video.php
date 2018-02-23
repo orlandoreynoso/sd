@@ -86,7 +86,13 @@
                   <ul class="visual-small">
                     <li class="datos ok" data-id= "<?php echo get_the_id(); ?>" data-videoname="<?php /* echo $post->post_name; */ echo get_the_title(); ?>">
                       <?php /* the_content(); */ ?>
-                      <?php the_post_thumbnail('video'); ?>
+                      <?php
+                      if(has_post_thumbnail()){
+                       the_post_thumbnail('video');
+                      }
+                      else{ ?>
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/videoimg.jpg" alt="">
+                      <?php  }         ?>
                     </li>
                   </ul>
               </div>
