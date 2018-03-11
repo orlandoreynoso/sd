@@ -15,8 +15,6 @@ $(document).ready(function() {
 
 //			var div_alto = $('.visuales .full#videoreal').height();
 			var div_alto = $('.visuales .full#videoreal').scrollTop;
-
-
 			//console.log("div alto: "+div_alto+"");
 			function borra_div(){
 				$('.visuales .full#videoreal').addClass('nuevo-full');

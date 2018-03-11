@@ -12,6 +12,8 @@ var waypoint = new Waypoint({
 
 $(document).ready(function() {
 
+console.log("en scriptjs");
+
   $('.bxslider').bxSlider({
     auto: true,
     mode: 'fade',
@@ -21,11 +23,42 @@ $(document).ready(function() {
   });
 
 
-/*Tamaños de las pantallas*/
+/*Tamaños del div donde estan el video full*/
 
-  var div_ancho = $("#masthead").width();
-  var div_alto = $("#masthead").height();
-  console.log("ancho masthead: "+div_ancho+" alto masthead: "+div_alto);
+  var div_ancho = $(".full#videoreal ").width();
+  var div_alto = $(".full#videoreal ").height();
+  console.log("carga v. w: "+div_ancho+" h: "+div_alto);
+
+  var lanzar = $('.interiores');
+/*
+  jQuery(document).ready(function($){
+  $(window).scroll(function () {
+  if ( $(this).scrollTop() > 500 )
+  $("#totop").fadeIn();
+  else
+  $("#totop").fadeOut();
+  });
+  $("#totop").click(function () {
+  $("body,html").animate({ scrollTop: 0 }, 500 );
+  return false;
+  });
+  });
+*/
+
+    var clicc = ('#videoreal ul li.datos');
+
+		$('#videoreal ul li.datos').on('click', function (a){
+			a.preventDefault();
+        console.log("01");
+            //$(window).scrollTop(0);
+        $('html, body').animate({
+              scrollTop: $(lanzar).offset().top
+            }, 800);
+      console.log("03");
+
+      //document.body.scrollTop = 0; // For Safari
+     //document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    });
 
 /*==== ver ancho de la pagina*/
 
@@ -49,4 +82,4 @@ console.log("jugo: "+slider);
 console.log("el ancho es: "+ ancho +  " Y el alto " + alto);
 
 
-});  /* finaliza document */
+});

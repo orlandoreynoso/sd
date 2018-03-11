@@ -5,7 +5,7 @@
     <?php // get_template_part( 'template/header','menuresponsivo'); ?>
     <?php get_template_part( 'template/header','menumovil'); ?>
   </nav>
-  
+
   <div class="menu-inicio" id="menu-inicio">
     <div class="container menu-frontpage">
       <div class="row">

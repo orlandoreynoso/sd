@@ -1,7 +1,6 @@
 .e-front-page
-	background-color: none
 	width: 100%
-	@media screen and (max-width: 640px)
+	@media screen and (max-width: 800px)
 		background-color: $sd-gris
 	.navbar-frontpage
 		@media screen and ( max-width: 640px )
@@ -13,43 +12,10 @@
 			justify-content: center
 			.current_page_item
 				transition: 0.5s ease
-				&:after
-					width: 100%
-					content: ''
-					display: block
-					background-color: $celeste
-					height: 3px
-					width: calc(var(--ttw)/2)
-					position: absolute
-					left: calc( calc( 100% - ( calc(var(--ttw)/2)) ) / 2 )
-					bottom: 0px
-					z-index: 100
-					transition: 0.5s ease
 			li
 				position: relative
 				padding: 0px 0px 0px
 				--ttw: 100%
-				&:hover
-					transition: 0.5s ease
-					&:after
-						width: 100%
-						content: ''
-						display: block
-						background-color: $celeste
-						height: 3px
-						width: calc(var(--sizem)/2)
-						position: absolute
-						left: calc( calc( 100% - ( calc(var(--sizem)/2)) ) / 2 )
-						bottom: 8px
-						z-index: 100
-						transition: 0.5s ease
-				a
-					padding: 20px 10px 20px
-					display: block
-					color: $sd-menu
-					text-decoration: none
-					&:hover
-						color: $m-verde
 /*==================Men MSC============ menu desk =============*/
 .e-front-page
 	.sticky-wrapper
@@ -59,19 +25,19 @@
 		position: sticky
 		display: block
 		opacity: 1!important
-.menu-inicio
-	padding: 20px
-	@media screen and ( max-width: 640px )
-		padding: 0px
-		background: none
-		-webkit-transition: all .5s ease .15s
-		-moz-transition: all .5s ease .15s
-		-o-transition: all .5s ease .15s
-		-ms-transition: all .5s ease .15s
-		transition: all .5s ease .15s
-	.menu-frontpage
+	.menu-inicio
+		padding: 20px
+		background-color: rgba($sd-gris,0.4)
 		@media screen and ( max-width: 640px )
-			display: none
+			padding: 0px
+			-webkit-transition: all .5s ease .15s
+			-moz-transition: all .5s ease .15s
+			-o-transition: all .5s ease .15s
+			-ms-transition: all .5s ease .15s
+			transition: all .5s ease .15s
+		.menu-frontpage
+			@media screen and ( max-width: 640px )
+				display: none
 .contenedor-frontpage
 	box-sizing: border-box
 	padding: 5px
@@ -86,20 +52,15 @@
 	.or-logo-cover
 		.sd_who
 			padding: 10px
-			color: $sd-limon-oscuro
+			color: $sd-limon
 			text-transform: uppercase
 			display: block
 			text-decoration: none
 			transition: 0.5s ease
-			@media screen and (max-width: 800px)
-				color: $sd-gris
-				text-align: center
 			&:hover
 				text-decoration: none
 				color: $blanco
 				transition: 0.5s ease
-				@media screen and (max-width: 800px)
-					color: $sd-limon-oscuro
 			h2
 				padding: 0px
 				margin: 0px
@@ -135,7 +96,7 @@
 						width: 100%
 						content: ''
 						display: block
-						background-color: $m-verde
+						background-color: $blanco
 						height: 3px
 						width: calc(var(--ttw)/2)
 						position: absolute
@@ -170,12 +131,13 @@
 							@media screen and (max-width: 800px)
 								background-color: $sd-limon-oscuro
 					a
-						color: $sd-limon-oscuro
+						color: $sd-limon
 						font-family: $froboto
 						text-transform: uppercase
 						font-size: 0.9777em
-						@media screen and (max-width: 800px)
-							color: $sd-gris
+						padding: 20px 10px 20px
+						display: block
+						text-decoration: none
 						&:hover
 							transition: 0.5s ease
 							color: $blanco

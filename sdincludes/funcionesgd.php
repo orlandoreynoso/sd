@@ -21,7 +21,7 @@ function resultados_visuales(){
   foreach($posts as $post){
 
     setup_postdata($post);
-    
+
     $listado[] = array(
       'objeto' => $post,
       'id' => $post->ID,

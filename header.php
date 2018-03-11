@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon.ico" type="image/x-icon" />
 	<?php wp_head(); ?>
+	<?php // get_template_part( 'template/codigo', 'seguimiento'); ?>
+
 </head>
 <body>
 
