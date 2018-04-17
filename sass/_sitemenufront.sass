@@ -26,7 +26,6 @@
 		display: block
 		opacity: 1!important
 	.menu-inicio
-		padding: 20px
 		background-color: rgba($sd-gris,0.4)
 		@media screen and ( max-width: 640px )
 			padding: 0px
@@ -46,10 +45,47 @@
 	flex-wrap: wrap
 	width: var(--sizem)
 	justify-content: space-between
-	align-items: flex-end
-	@media screen and ( min-width: 640px ) and (max-width: 1000px )
+	align-content: center
+	align-items: center
+/*	@media screen and ( min-width: 640px ) and (max-width: 800px )
+		justify-content: center*/
+.contenedor-frontpage
+	padding-bottom: 15px
+	box-sizing: border-box	
+	@media screen and (max-width: 768px)
 		justify-content: center
+	.or-frontpage
+		box-sizing: border-box
+	.or-logo-cover		
+		width: 28%
+		box-sizing: border-box
+		@media screen and (max-width: 768px)
+			width: 100%
+			margin: 0px auto
+			text-align: center
+			display: block
 	.or-logo-cover
+		.logo
+			display: block
+			margin: 0px
+			padding: 0px
+			height: 80px
+			width: 250px
+			padding: 8px 0px 10px 8px
+			box-sizing: border-box
+			@media screen and (max-width: 768px)
+				width: 200px
+				text-align: center
+				margin: 0px auto
+			img
+				display: block
+				margin: 0px
+				padding: 0px
+				width: 100%
+				height: auto
+			&:hover
+				transition: 0.5s ease
+				opacity: 0.5	
 		.sd_who
 			padding: 10px
 			color: $sd-limon
@@ -80,14 +116,6 @@
 				font-weight: 300
 				font-family: $froboto
 				margin-top: 8px
-		.logo
-			width: 75px
-			height: 75px
-			display: block
-			img
-				width: 100%
-				height: auto
-				display: block
 	.or-frontpage
 		.navbar-frontpage
 			ul.menu

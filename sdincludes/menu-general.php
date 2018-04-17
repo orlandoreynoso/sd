@@ -11,7 +11,7 @@
       <div class="row">
         <div class="contenedor-lm-msc">
           <div class="or-logo-cover">
-            <?php marca_sd(); ?>
+            <?php logo_sd(); ?>
           </div>
           <div class="or-menum">
             <nav class="navbar-me">

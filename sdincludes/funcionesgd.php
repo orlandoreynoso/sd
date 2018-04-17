@@ -52,7 +52,7 @@ function marca_sd(){ ?>
 }
 
 function logo_sd(){
-$logo = IMAGES.'/logomsc.png'; ?>
+$logo = IMAGES.'/logo_SenderAudiovisual.png'; ?>
 <a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo $logo; ?>" alt="Sender Audiovisual"></a>
 <?php
 }

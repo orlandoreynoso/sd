@@ -11,7 +11,7 @@
       <div class="row">
         <div class="contenedor-frontpage">
           <div class="or-logo-cover">
-            <?php marca_sd(); ?>
+            <?php logo_sd(); ?>
           </div>
           <div class="or-frontpage">
             <nav class="navbar-frontpage">
